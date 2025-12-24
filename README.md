@@ -93,4 +93,5 @@ if (amtBack.gt(profitTarget)) {
 Once we have found a trade which is profitable we execute it using the dualDexTrade function.
 const tx = await arb.connect(owner).dualDexTrade(router1, router2, baseToken, token2, amount);
 await tx.wait();
-Note that there is some logic to handle too many trades at any one time. I found that executing too quickly didn’t give the RPC nodes a chance to catch up which gave duplicate nonce errors. There is a hardhat module called NonceManager but I couldn’t get it to work consistently.
+Note that there is some logic to handle too many trades at any one time. I found that executing too quickly didn’t give the RPC nodes a chance to catch up which gave duplicate nonce errors. There is a hardhat module called NonceManager but I couldn’t get it to work consistently.Hello from two people!
+Hello from two people!
